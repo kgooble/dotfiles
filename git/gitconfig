@@ -1,0 +1,53 @@
+[push]
+  default = current
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = 1
+[core]
+  excludesfile = ~/.gitignore
+  editor = vim
+  autocrlf = input
+[format]
+  pretty = %Cblue%h%Creset %Cgreen[%cr]%Creset (%an) %s
+[alias]
+  b = branch -a -v
+  c = commit -m
+  a = add
+  co = checkout
+  d = diff --word-diff
+  dc = diff --cached --word-diff
+  pl = pull --rebase
+  ps = push
+  plre = pull --rebase
+  s = status -sb
+  st = status -sb
+  t = tag
+  out = log origin..HEAD
+  tip = log -n1
+  lg = log -p
+  r = remote -v
+  rc = rebase --continue
+  ra = rebase --abort
+  ri = rebase -i
+  ci = commit
+  ca = commit --amend
+  bs = bisect
+  rb = rebase
+  f = flow
+  su = submodule update --init --recursive --quiet
+  who = blame -CCCw
+  up = pull --rebase --autostash
+[branch]
+  autosetuprebase = always
+[credential]
+  helper = osxkeychain
+[help]
+  autocorrect = 1
+
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  required = true
+  process = git-lfs filter-process

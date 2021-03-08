@@ -21,3 +21,8 @@ cd dotfiles-master
 - Install [Network Link Conditioner via Xcode](https://nshipster.com/network-link-conditioner/)
 - [Add new SSH key to Github](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 - All listed Uken manual steps
+- Set up git user:
+   ```sh
+   git config --global user.name "John Doe"
+   git config --global user.email johndoe@example.com
+   ```
