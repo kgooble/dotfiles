@@ -23,3 +23,7 @@ brew update
 ./tmux/setup.sh
 
 ./python/setup.sh
+
+./uken/setup.sh
+
+brew cleanup

@@ -10,3 +10,8 @@ brew install --cask slack
 brew install --cask postico
 brew install --cask contexts
 brew install --cask evernote
+brew install --cask rectangle
+brew install --cask zoom
+brew install --cask libreoffice
+brew install --cask disk-inventory-x
+brew install --cask gimp

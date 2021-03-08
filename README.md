@@ -11,53 +11,13 @@ cd dotfiles-master
 
 ## Manual Follow-ups
 
-- Link JetBrains Rider to settings repository `https://github.com/kgooble/jetbrains-settings`
-- Install Unity versions with Android & iOS build support:
-  - 2018.4.11
-  - 2019.4.16
+- Link JetBrains Rider to [settings repository](https://github.com/kgooble/jetbrains-settings)
+- Install Unity versions with Android & iOS build support, including Android SDK/NDK:
+  - [2018.4.11](unityhub://2018.4.11f1/7098af2f11ea)
+  - [2019.4.16](unityhub://2019.4.16f1/e05b6e02d63e)
 - Setup licenses
   - Postico
   - Contexts
-
-Important things to install:
-[ ] Java 8, 11
-[ ] SSH set up for Git
-[ ] Ag (The silver searcher)
-[ ] Rectangle
-   [ ] https://github.com/rxhanson/Rectangle
-[ ] Zoom
-
-Things needed specifically for work at Uken:
-[ ] Jeopardy Stuff
-   [ ] Rbenv
-      [ ] https://github.com/uken/jeopardy-unity/wiki/Ramp-Up-I:-Setting-Up
-   [ ] Ruby 2.5.0
-      [ ] Bundler
-   [ ] Rails
-   [ ] Postgres 9
-   [ ] Redis 3
-[ ] OpenVPN
-   [ ] Uken Office VPN https://sites.google.com/uken.com/wiki/the-office/uken-sso-onelogin-instructions?authuser=0
-   [ ] Unifi VPN (Mac Builds)
-[ ] Network link conditioner
-[ ] Android SDK
-   [ ] https://formulae.brew.sh/cask/android-studio
-   [ ] https://docs.unity3d.com/Manual/android-sdksetup.html
-   [ ] Android NDK too
-[ ] Sqlite
-[ ] DB Browser for Sqlite
-[ ] LibreOffice
-[ ] AWS credentials (~/.aws)
-
-Less important things to install:
-[ ] ngrok
-[ ] Docker
-[ ] Postman
-[ ] Disk inventory x
-[ ] Giphy
-[ ] Gimp
-
-Uken-specific Repositories to clone:
-[ ] All Client libraries
-[ ] All Games
-
+- Install [Network Link Conditioner via Xcode](https://nshipster.com/network-link-conditioner/)
+- [Add new SSH key to Github](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+- All listed Uken manual steps
