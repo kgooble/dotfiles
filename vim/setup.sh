@@ -4,6 +4,6 @@ echo "Installing Vim..."
 
 brew install vim
 
-# TODO
-#   [ ] Vimrc
-#   [ ] New plugin system?
+echo "Symlinking vimrc..."
+
+ln -s -f ./vim/vimrc ~/.vimrc
