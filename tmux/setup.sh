@@ -3,5 +3,7 @@
 echo "Installing tmux..."
 
 brew install tmux
-# TODO:
-#[ ] Tmux config
+
+echo "Symlinking tmux.conf.."
+
+ln -s -f ./tmux/tmux.conf ~/.tmux.conf
