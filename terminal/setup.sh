@@ -5,6 +5,14 @@ brew install --cask iterm2
 brew install zsh
 brew install the_silver_searcher
 
-# TODO
-#   [ ] Zsh aliases and such
-#   [ ] Prompt configuration (show git branch, current directory)
+echo "Symlinking zprofile..."
+
+ln -s -f ./terminal/zprofile ~/.zprofile
+
+echo "Symlinking aliases..."
+
+mkdir ~/.terminal/
+
+ln -s -f ./terminal/aliases ~/.terminal/aliases
+
+# TODO: Prompt configuration (show git branch, current directory, powerlevel10k
