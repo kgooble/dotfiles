@@ -12,6 +12,7 @@ cd dotfiles-master
 ## Manual Follow-ups
 
 - Link JetBrains Rider to [settings repository](https://github.com/kgooble/jetbrains-settings)
+- Run `:PlugInstall` from vim
 - Install Unity versions with Android & iOS build support, including Android SDK/NDK:
   - [2019.4.16](unityhub://2019.4.16f1/e05b6e02d63e)
 - Setup licenses
