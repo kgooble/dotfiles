@@ -1,0 +1,80 @@
+# rails stuff
+alias changeset="~/tools/changeset.rb"
+alias be='bundle exec'
+
+alias get='find . -iname '
+
+# git stuff
+g() {
+  if [[ $# == '0' ]]; then
+    git s
+  else
+    git "$@"
+  fi
+}
+
+gpr() {
+  originurl=$(git config --get remote.origin.url)
+  originurl=${originurl/git\@github\.com\:/https://github.com/}
+  originurl=${originurl/\git:/https:}
+  originurl=${originurl/\.git/}
+  branchName=$(git rev-parse --abbrev-ref HEAD)
+
+  if [ $# -eq 0 ]; then
+    giturl=$originurl"/compare/"$branchName"?expand=1"
+  else
+    giturl=$originurl"/compare/"$1"..."$branchName"?expand=1"
+  fi
+
+  open $giturl
+}
+
+_gpr_completions() {
+  if [ "${#COMP_WORDS[@]}" != "2" ]; then
+    return
+  fi
+
+  branches=`git branch | cut -b3-`
+  COMPREPLY=($(compgen -W "$branches" "${COMP_WORDS[1]}"))
+}
+
+complete -F _gpr_completions gpr
+
+gbr() {
+  originurl=$(git config --get remote.origin.url | tr '[:upper:]' '[:lower:]')
+  originurl=${originurl/git\@bitbucket\.org\:/https://bitbucket.org/}
+  originurl=${originurl/\git:/https:}
+  originurl=${originurl/\.git/}
+
+  path=$(git config --get remote.origin.url | tr '[:upper:]' '[:lower:]' | sed -e 's/git@bitbucket.org://')
+
+  branchName=$(git rev-parse --abbrev-ref HEAD)
+  giturl=$originurl"/pull-request/new?source="$path"::"$branchName
+  open $giturl
+}
+
+gbc() {
+  git branch --merged | grep -v "\*" | grep -v "master" | xargs -n 1 git branch -d
+}
+
+alias gadd="git add -u && git add . && git status"
+alias gs="git s"
+alias ga="git a"
+alias gb="git b"
+alias gc="git c"
+alias gps="git ps"
+alias gamend="git commit --amend --no-edit"
+alias gconflicts="git diff --name-only --diff-filter=U"
+
+# file system stuff
+alias ls="ls -Fh"
+alias ll="ls -Al"
+alias l="ls -AF"
+function c { cd ~/code/$1; }
+
+# package development
+alias package='get package.json | xargs cat'
+alias manifest='get manifest.json | xargs cat'
+
+# Unity stuff
+alias unityeditorlog='open ~/Library/Logs/Unity/Editor.log'

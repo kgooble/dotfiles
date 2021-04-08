@@ -1,0 +1,5 @@
+# Vim swap files
+.*.swp
+
+# https://en.wikipedia.org/wiki/.DS_Store
+.DS_Store
