@@ -6,4 +6,4 @@ brew install tmux
 
 echo "Symlinking tmux.conf.."
 
-ln -s -f ./tmux/tmux.conf ~/.tmux.conf
+ln -s -f "$PWD/tmux/tmux.conf" ~/.tmux.conf

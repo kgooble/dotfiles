@@ -8,4 +8,5 @@ echo "Creating required directories for vim..."
 mkdir -p ~/.vim/swp
 mkdir -p ~/.vim/backup
 
-ln -s -f ./vim/vimrc ~/.vimrc
+echo "Symlinking vimrc..."
+ln -s -f "$PWD/vim/vimrc" ~/.vimrc
