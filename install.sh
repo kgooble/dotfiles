@@ -24,6 +24,4 @@ brew update
 
 ./python/setup.sh
 
-./uken/setup.sh
-
 brew cleanup
