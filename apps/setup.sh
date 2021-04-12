@@ -16,3 +16,5 @@ brew install --cask libreoffice
 brew install --cask disk-inventory-x
 brew install --cask gimp
 brew install --cask steam
+
+defaults write -g ApplePressAndHoldEnabled 0
