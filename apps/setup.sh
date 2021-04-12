@@ -15,3 +15,4 @@ brew install --cask zoom
 brew install --cask libreoffice
 brew install --cask disk-inventory-x
 brew install --cask gimp
+brew install --cask steam
