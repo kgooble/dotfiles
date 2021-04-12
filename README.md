@@ -18,6 +18,7 @@
 - Install JetBrains Rider & link it to [settings repository](https://github.com/kgooble/jetbrains-settings)
 - Run `:PlugInstall` from vim
 - Install Unity versions with Android & iOS build support, including Android SDK/NDK
+- Install Xcode versions required
 - Setup licenses
   - Contexts
 - Install [Network Link Conditioner via Xcode](https://nshipster.com/network-link-conditioner/)

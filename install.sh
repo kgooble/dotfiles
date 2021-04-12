@@ -10,8 +10,6 @@ brew update
 
 ./git/setup.sh
 
-./xcode/setup.sh
-
 ./terminal/setup.sh
 
 ./apps/setup.sh
