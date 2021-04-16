@@ -1,5 +1,8 @@
 # Vim swap files
 .*.swp
 
+# IntelliJ files
+.idea
+
 # https://en.wikipedia.org/wiki/.DS_Store
 .DS_Store
