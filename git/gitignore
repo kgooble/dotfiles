@@ -6,3 +6,6 @@
 
 # https://en.wikipedia.org/wiki/.DS_Store
 .DS_Store
+
+# Where I usually put Unity builds
+Builds
