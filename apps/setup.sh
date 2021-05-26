@@ -17,5 +17,6 @@ brew install --cask disk-inventory-x
 brew install --cask gimp
 brew install --cask steam
 brew install --cask kap
+brew install --cask android-studio
 
 defaults write -g ApplePressAndHoldEnabled 0
