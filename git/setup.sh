@@ -1,8 +1,9 @@
 #!/usr/bin/env zsh
 
-echo "Installing git..."
+echo "Installing git & git-lfs..."
 
 brew install git
+brew install git-lfs
 
 echo "Symlinking gitconfig..."
 
